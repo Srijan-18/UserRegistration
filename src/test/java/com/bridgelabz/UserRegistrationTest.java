@@ -46,4 +46,39 @@ public class UserRegistrationTest {
         boolean result=userRegistration.firstnameValidator("Srijan");
         Assert.assertEquals(true,result);
     }
+
+    @Test
+    public void givenLastName_whenShort_shouldReturnFalse() {
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(false,userRegistration.lastNameValidator("Mi"));
+    }
+
+    @Test
+    public void givenLastName_whenStartsWithLoweCase_shouldReturnFalse() {
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(false,userRegistration.lastNameValidator("mishra"));
+    }
+
+    @Test
+    public void givenLastName_whenContainsNumerics_shouldReturnFalse() {
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(false,userRegistration.lastNameValidator("Mis1hra"));
+    }
+
+    @Test
+    public void givenLastName_whenContainsSpecialCharacters_shouldReturnFalse() {
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(false,userRegistration.lastNameValidator("M!shra"));
+    }
+    @Test
+    public void givenLastName_whenContainsCapsOtherThanStart_shouldReturnFalse(){
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(false,userRegistration.lastNameValidator("MiSHra"));
+    }
+
+    @Test
+    public void givenLastName_whenMatchesPattern_shouldReturnTrue() {
+        UserRegistration userRegistration=new UserRegistration();
+        Assert.assertEquals(true,userRegistration.lastNameValidator("Mishra"));
+    }
 }
