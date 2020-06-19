@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-06-19T05:39:41" hostname="CONSANGUINITY" time="0.022">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-06-19T06:27:34" hostname="CONSANGUINITY" time="0.041">
   <properties/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[0]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[1]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[2]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[3]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[4]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[5]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[6]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[7]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[8]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[9]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[10]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[11]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[12]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[13]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[14]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[15]" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[16]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[17]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[18]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[19]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[20]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenNoNumericIsPresent_ShouldReturnFalse[21]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[0]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[1]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[2]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[3]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[4]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[5]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[6]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[7]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[8]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[9]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[10]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[11]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[12]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[13]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[14]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[15]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[16]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[17]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[18]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[19]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[20]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="given_Password_followsThePattern_shouldReturnTrue[21]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
