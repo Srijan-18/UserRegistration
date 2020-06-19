@@ -16,57 +16,57 @@ public class UserRegistrationTest {
     private UserRegistration userRegistration=new UserRegistration();
     //TEST METHODS FOR FIRST NAME
     @Test
-    public void givenFirstName_whenShort_shouldReturnFalse() {
+    public void givenFirstName_WhenShort_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.firstNameValidator("Am"));
     }
 
     @Test
-    public void givenFirstName_whenStartNotInCAP_shouldReturnFalse() {
+    public void givenFirstName_WhenStartNotInCAP_ShouldReturnFalse() {
     Assert.assertFalse(userRegistration.firstNameValidator("mAdhdf"));
     }
     @Test
-    public void givenFirstName_whenContainsSpecialCharacters_shouldReturnFalse() {
+    public void givenFirstName_WhenContainsSpecialCharacters_ShouldReturnFalse() {
     Assert.assertFalse(userRegistration.firstNameValidator(".Adhdf"));
     }
     @Test
-    public void givenFirstName_whenContainsNumeric_shouldReturnFalse() {
+    public void givenFirstName_WhenContainsNumeric_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.firstNameValidator("Ad1hdf"));
     }
     @Test
-    public void givenFirstName_whenContainsCapsOtherThanStart_shouldReturnFalse() {
+    public void givenFirstName_WhenContainsCapsOtherThanStart_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.firstNameValidator("AdHdf"));
     }
     @Test
-    public void givenFirstName_matchesThePattern_shouldReturnTrue() {
+    public void givenFirstName_MatchesThePattern_ShouldReturnTrue() {
         Assert.assertTrue(userRegistration.firstNameValidator("Srijan"));
     }
     //TEST METHODS FOR LAST NAME
     @Test
-    public void givenLastName_whenShort_shouldReturnFalse() {
+    public void givenLastName_WhenShort_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.lastNameValidator("Mi"));
     }
 
     @Test
-    public void givenLastName_whenStartsWithLoweCase_shouldReturnFalse() {
+    public void givenLastName_WhenStartsWithLoweCase_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.lastNameValidator("mishra"));
     }
 
     @Test
-    public void givenLastName_whenContainsNumerics_shouldReturnFalse() {
+    public void givenLastName_WhenContainsNumerics_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.lastNameValidator("Mis1hra"));
     }
 
     @Test
-    public void givenLastName_whenContainsSpecialCharacters_shouldReturnFalse() {
+    public void givenLastName_WhenContainsSpecialCharacters_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.lastNameValidator("M!shra"));
     }
     @Test
-    public void givenLastName_whenContainsCapsOtherThanStart_shouldReturnFalse(){
+    public void givenLastName_WhenContainsCapsOtherThanStart_ShouldReturnFalse(){
         Assert.assertFalse(userRegistration.lastNameValidator("MiSHra"));
     }
 
     @Test
-    public void givenLastName_whenMatchesPattern_shouldReturnTrue() {
+    public void givenLastName_WhenMatchesPattern_ShouldReturnTrue() {
         Assert.assertTrue(userRegistration.lastNameValidator("Mishra"));
     }
     public UserRegistrationTest(String testEmail,boolean expectedResult)
@@ -76,7 +76,7 @@ public class UserRegistrationTest {
     }
     //TEST METHOD FOR EMAIL ADDRESS
     @Test
-    public void givenEmail_shouldReturnResultAsExpected() {
+    public void givenEmail_ShouldReturnResultAsExpected() {
         Assert.assertEquals(this.expectedResult,userRegistration.emailAddressValidator(this.testEmail));
     }
 
@@ -110,57 +110,57 @@ public class UserRegistrationTest {
     }
     //TEST METHODS FOR MOBILE NUMBER
     @Test
-    public void givenMobileNumber_whenCountryCodeIsAbsent_shouldReturnFalse() {
+    public void givenMobileNumber_WhenCountryCodeIsAbsent_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("9876543210"));
     }
 
     @Test
-    public void givenMobileNumber_whenAlphabetisPresent_shouldReturnFalse() {
+    public void givenMobileNumber_WhenAlphabetisPresent_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("91 98756d545S"));
     }
 
     @Test
-    public void givenMobileNumber_whenStartsWithZero_shouldReturnFalse() {
+    public void givenMobileNumber_WhenStartsWithZero_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("91 0879456123"));
     }
 
     @Test
-    public void givenMobileNumber_whenLengthIsLessThanTen_shouldReturnFalse() {
+    public void givenMobileNumber_WhenLengthIsLessThanTen_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("91 987564321"));
     }
 
     @Test
-    public void givenMobileNumber_whenLengthIsGreaterThanTen_shouldReturnFalse() {
+    public void givenMobileNumber_WhenLengthIsGreaterThanTen_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("91 98756432101"));
     }
 
     @Test
-    public void givenMobileNumber_whenContainsSpecialCharacter_shouldReturnFlase() {
+    public void givenMobileNumber_WhenContainsSpecialCharacter_ShouldReturnFlase() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("91 987564321@"));
     }
 
     @Test
-    public void givenMobilenumber_whenCountryCodeIsGreaterThan3Digits_shouldReturnFalse() {
+    public void givenMobilenumber_WhenCountryCodeIsGreaterThan3Digits_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.mobileNumberValidator("9125 9876543210"));
     }
 
     @Test
-    public void givenMobileNumber_whenMatchesPattern_shouldReturnTrue() {
+    public void givenMobileNumber_WhenMatchesPattern_ShouldReturnTrue() {
         Assert.assertTrue(userRegistration.mobileNumberValidator("91 7078887887"));
     }
     // TEST METHODS FOR PASSWORD
 
     @Test
-    public void givenPassword_whenLengthLessthanEightCharacters_shouldReturnFalse() {
+    public void givenPassword_WhenLengthLessthanEightCharacters_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.passwordValidator("As1#"));
     }
     @Test
-    public void givenPassword_whenNoUppercase_shouldReturnFalse() {
+    public void givenPassword_WhenNoUppercase_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.passwordValidator("asdjg#cl1561iadewffwe"));
     }
 
     @Test
-    public void givenPassword_whenNoNumericIsPresent_ShouldReturnFalse() {
+    public void givenPassword_WhenNoNumericIsPresent_ShouldReturnFalse() {
         Assert.assertFalse(userRegistration.passwordValidator("wEk%jfgerr"));
     }
 
@@ -170,7 +170,7 @@ public class UserRegistrationTest {
     }
 
     @Test
-    public void given_Password_followsThePattern_shouldReturnTrue() {
+    public void givenPassword_FollowsThePattern_ShouldReturnTrue() {
         Assert.assertTrue(userRegistration.passwordValidator("wEkjf#gerr152"));
     }
 }
