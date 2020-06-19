@@ -152,14 +152,20 @@ public class UserRegistrationTest {
 
     @Test
     public void givenPassword_whenLengthLessthanEightCharacters_shouldReturnFalse() {
-        Assert.assertFalse(userRegistration.passwordValidator("Asd"));
+        Assert.assertFalse(userRegistration.passwordValidator("Asd1"));
     }
     @Test
     public void givenPassword_whenNoUppercase_shouldReturnFalse() {
         Assert.assertFalse(userRegistration.passwordValidator("asdjgcl1561iadewffwe"));
     }
+
     @Test
-    public void givenPassword_whenHasAtleastOneUpperCaseAndIsMoreThanEightCharacters_shouldReturnTrue() {
+    public void givenPassword_whenNoNumericIsPresent_ShouldReturnFalse() {
+        Assert.assertFalse(userRegistration.passwordValidator("wEkjfgerr"));
+    }
+
+    @Test
+    public void given_Password_followsThePattern_shouldReturnTrue() {
         Assert.assertTrue(userRegistration.passwordValidator("wEkjfgerr152"));
     }
 }
