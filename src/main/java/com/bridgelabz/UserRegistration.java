@@ -51,11 +51,20 @@ public class UserRegistration {
             System.out.print("\n\t\tVALID LAST NAME\n");
         else
             System.out.print("\n\t\tINVALID LAST NAME\n");
+        System.out.print("\n\t\tEnter Mobile Number :");
+        if(userRegistration.mobileNumberValidator(scanner.nextLine()))
+            System.out.print("\n\t\tVALID MOBILE NUMBER\n");
+        else
+            System.out.print("\n\t\tINVALID MOBILE NUMBER\n");
         System.out.print("\n\t\tEnter Email Address :");
         if(userRegistration.emailAddressValidator(scanner.nextLine()))
             System.out.print("\n\t\tVALID EMAIL ADDERESS\n");
         else
             System.out.print("\n\t\tINVALID EMAIL ADDRESS\n");
+        System.out.print("\n\t\tEnter Password :");
+        if(userRegistration.passwordValidator(scanner.nextLine()))
+            System.out.print("\n\t\tVALID PASSWORD\n");
+        else
+            System.out.print("\n\t\tINVALID PASSWORD\n");
     }
-
 }
