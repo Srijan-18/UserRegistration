@@ -74,7 +74,7 @@ public class UserRegistrationTest {
         this.testEmail=testEmail;
         this.expectedResult=expectedResult;
     }
-
+    //TEST METHOD FOR EMAIL ADDRESS
     @Test
     public void givenEmail_shouldReturnResultAsExpected() {
         Assert.assertEquals(this.expectedResult,userRegistration.emailAddressValidator(this.testEmail));
@@ -82,7 +82,7 @@ public class UserRegistrationTest {
 
     //TEST CASES FOR EMAIL ADDRESS
     @Parameterized.Parameters
-    public static Collection emailTestCasess_and_expectedResults() {
+    public static Collection emailTestCases_and_expectedResults() {
         return Arrays.asList(new Object[][]{
                 {"abc@yahoo.com", true},
                 {"abc-100@yahoo.com", true},
@@ -107,5 +107,45 @@ public class UserRegistrationTest {
                 {"abc@@gmail.com.1a", false},
                 {"abc@gmail.com.aa.au", false},
         });
+    }
+    //TEST METHODS FOR MOBILE NUMBER
+    @Test
+    public void givenMobileNumber_whenCountryCodeIsAbsent_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("9876543210"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenAlphabetisPresent_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("91 98756d545S"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenStartsWithZero_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("91 0879456123"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenLengthIsLessThanTen_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("91 987564321"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenLengthIsGreaterThanTen_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("91 98756432101"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenContainsSpecialCharacter_shouldReturnFlase() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("91 987564321@"));
+    }
+
+    @Test
+    public void givenMobilenumber_whenCountryCodeIsGreaterThan3Digits_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.mobileNumberValidator("9125 9876543210"));
+    }
+
+    @Test
+    public void givenMobileNumber_whenMatchesPattern_shouldReturnTrue() {
+        Assert.assertTrue(userRegistration.mobileNumberValidator("91 7078887887"));
     }
 }
