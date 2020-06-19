@@ -9,7 +9,7 @@ public class UserRegistration {
     private static final String EMAIL_ADDRESS_PATTERN="^[a-zA-Z0-9]+([._+-][0-9a-zA-Z]+)*"+
                                                     "@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})?$";
     private static final String MOBILE_NUMBER_PATTERN="^[1-9][0-9]{0,2}[ ][1-9][0-9]{9}$";
-    private static final String PASSWORD_PATTERN="^([A-z0-9]){8,}$";
+    private static final String PASSWORD_PATTERN="^(?=.*[A-Z])([A-z0-9]){8,}$";
     //METHOD TO VALIDATE FIRST NAME
     public boolean firstNameValidator(String firstName)
     {
@@ -30,6 +30,11 @@ public class UserRegistration {
     public boolean mobileNumberValidator(String mobileNumber) {
         Pattern pattern=Pattern.compile(MOBILE_NUMBER_PATTERN);
         return pattern.matcher(mobileNumber).matches();
+    }
+    //METHOD TO VALIDATE PASSWORD
+    public boolean passwordValidator(String password) {
+        Pattern pattern=Pattern.compile(PASSWORD_PATTERN);
+        return pattern.matcher(password).matches();
     }
     //MAIN METHOD
     public static void main(String[] args){
@@ -53,8 +58,4 @@ public class UserRegistration {
             System.out.print("\n\t\tINVALID EMAIL ADDRESS\n");
     }
 
-    public boolean passwordValidator(String password) {
-        Pattern pattern=Pattern.compile(PASSWORD_PATTERN);
-        return pattern.matcher(password).matches();
-    }
 }

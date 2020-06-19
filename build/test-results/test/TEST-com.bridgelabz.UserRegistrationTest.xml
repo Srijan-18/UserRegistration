@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-06-19T05:12:59" hostname="CONSANGUINITY" time="0.032">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2020-06-19T05:28:08" hostname="CONSANGUINITY" time="0.034">
   <properties/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[0]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[1]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[2]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[3]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[4]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[5]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[6]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[7]" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[8]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[9]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[10]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[11]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[12]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[13]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[14]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[15]" classname="com.bridgelabz.UserRegistrationTest" time="0.013"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[16]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[17]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[18]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[19]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[20]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
-  <testcase name="givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue[21]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[0]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[1]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[2]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[3]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[4]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[5]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[6]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[7]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[8]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[9]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[10]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[11]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[12]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[13]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[14]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[15]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[16]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[17]" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[18]" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[19]" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[20]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenPassword_whenNoUppercase_shouldReturnFalse[21]" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
