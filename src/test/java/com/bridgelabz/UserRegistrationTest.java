@@ -13,76 +13,60 @@ import java.util.Collection;
 public class UserRegistrationTest {
     private String testEmail;
     private boolean expectedResult;
+    private UserRegistration userRegistration=new UserRegistration();
     //TEST METHODS FOR FIRST NAME
     @Test
     public void givenFirstName_whenShort_shouldReturnFalse() {
-        UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.firstNameValidator("Am"));
     }
 
     @Test
     public void givenFirstName_whenStartNotInCAP_shouldReturnFalse() {
-
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.firstNameValidator("mAdhdf"));
+    Assert.assertFalse(userRegistration.firstNameValidator("mAdhdf"));
     }
     @Test
     public void givenFirstName_whenContainsSpecialCharacters_shouldReturnFalse() {
-
-        UserRegistration userRegistration = new UserRegistration();
-        Assert.assertFalse(userRegistration.firstNameValidator(".Adhdf"));
+    Assert.assertFalse(userRegistration.firstNameValidator(".Adhdf"));
     }
     @Test
     public void givenFirstName_whenContainsNumeric_shouldReturnFalse() {
-
-        UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.firstNameValidator("Ad1hdf"));
     }
     @Test
     public void givenFirstName_whenContainsCapsOtherThanStart_shouldReturnFalse() {
-
-        UserRegistration userRegistration = new UserRegistration();
         Assert.assertFalse(userRegistration.firstNameValidator("AdHdf"));
     }
     @Test
     public void givenFirstName_matchesThePattern_shouldReturnTrue() {
-
-        UserRegistration userRegistration = new UserRegistration();
         Assert.assertTrue(userRegistration.firstNameValidator("Srijan"));
     }
     //TEST METHODS FOR LAST NAME
     @Test
     public void givenLastName_whenShort_shouldReturnFalse() {
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertFalse(userRegistration.lastNameValidator("Mi"));
     }
 
     @Test
     public void givenLastName_whenStartsWithLoweCase_shouldReturnFalse() {
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertFalse(userRegistration.lastNameValidator("mishra"));
     }
 
     @Test
     public void givenLastName_whenContainsNumerics_shouldReturnFalse() {
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertFalse(userRegistration.lastNameValidator("Mis1hra"));
     }
 
     @Test
     public void givenLastName_whenContainsSpecialCharacters_shouldReturnFalse() {
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertFalse(userRegistration.lastNameValidator("M!shra"));
     }
     @Test
     public void givenLastName_whenContainsCapsOtherThanStart_shouldReturnFalse(){
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertFalse(userRegistration.lastNameValidator("MiSHra"));
     }
 
     @Test
     public void givenLastName_whenMatchesPattern_shouldReturnTrue() {
-        UserRegistration userRegistration=new UserRegistration();
         Assert.assertTrue(userRegistration.lastNameValidator("Mishra"));
     }
     public UserRegistrationTest(String testEmail,boolean expectedResult)
@@ -93,7 +77,6 @@ public class UserRegistrationTest {
 
     @Test
     public void givenEmail_shouldReturnResultAsExpected() {
-        UserRegistration userRegistration = new UserRegistration();
         Assert.assertEquals(this.expectedResult,userRegistration.emailAddressValidator(this.testEmail));
     }
 
