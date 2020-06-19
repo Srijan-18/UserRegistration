@@ -5,20 +5,19 @@ import java.util.regex.Pattern;
 
 public class UserRegistration {
     //PATTERNS
-    private static final String FIRST_NAME_PATTERN="^[A-Z]{1}[a-z]{2,}$";
-    private static final String LAST_NAME_PATTERN="^[A-Z]{1}[a-z]{2,}$";
+    private static final String NAME_PATTERN="^[A-Z]{1}[a-z]{2,}$";
     private static final String EMAIL_ADDRESS_PATTERN="^[a-zA-Z0-9]+([._+-][0-9a-zA-Z]+)*"+
                                                     "@[a-zA-Z0-9]+.[a-zA-Z]{2,4}([.][a-zA-Z]{2,3})?$";
     private static final String MOBILE_NUMBER_PATTERN="^[1-9][0-9]{0,2}[ ][1-9][0-9]{9}$";
     //METHOD TO VALIDATE FIRST NAME
     public boolean firstNameValidator(String firstName)
     {
-        Pattern pattern=Pattern.compile(FIRST_NAME_PATTERN);
+        Pattern pattern=Pattern.compile(NAME_PATTERN);
         return pattern.matcher(firstName).matches();
     }
     //METHOD TO VALIDATE LAST NAME
     public boolean lastNameValidator(String lastName) {
-        Pattern pattern=Pattern.compile(LAST_NAME_PATTERN);
+        Pattern pattern=Pattern.compile(NAME_PATTERN);
         return pattern.matcher(lastName).matches();
     }
     //METHOD TO VALIDATE EMAIL ADDRESS
