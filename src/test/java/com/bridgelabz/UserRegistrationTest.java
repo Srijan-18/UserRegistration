@@ -148,4 +148,15 @@ public class UserRegistrationTest {
     public void givenMobileNumber_whenMatchesPattern_shouldReturnTrue() {
         Assert.assertTrue(userRegistration.mobileNumberValidator("91 7078887887"));
     }
+    // TEST METHODS FOR PASSWORD
+
+    @Test
+    public void givenPassword_whenLengthLessthanEightCharacters_shouldReturnFalse() {
+        Assert.assertFalse(userRegistration.passwordValidator("asd"));
+    }
+
+    @Test
+    public void givenPassword_whenLengthGreaterThanEightCharacters_shouldReturnTrue() {
+        Assert.assertTrue(userRegistration.passwordValidator("wekjfgerr152"));
+    }
 }
