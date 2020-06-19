@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-19T01:43:56" hostname="CONSANGUINITY" time="0.003">
+<testsuite name="com.bridgelabz.UserRegistrationTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2020-06-19T02:02:22" hostname="CONSANGUINITY" time="0.02">
   <properties/>
   <testcase name="givenLastName_whenMatchesPattern_shouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenLastName_whenStartsWithLoweCase_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenShort_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenContainsCapsOtherThanStart_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenLastName_whenContainsSpecialCharacters_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenContainsCapsOtherThanStart_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_matchesThePattern_shouldReturnTrue" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenStartNotInCAP_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_whenContainsNumeric_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_whenContainsSpecialCharacters_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenContainsNumerics_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_whenShort_shouldReturnFalse" classname="com.bridgelabz.UserRegistrationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

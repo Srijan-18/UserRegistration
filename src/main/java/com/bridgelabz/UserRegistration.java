@@ -1,6 +1,5 @@
 package com.bridgelabz;
 
-import javax.swing.*;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -10,7 +9,7 @@ public class UserRegistration {
     private static final String LAST_NAME_PATTERN="^[A-Z]{1}[a-z]{2,}$";
 
     //METHOD TO VALIDATE FIRST NAME
-    public boolean firstnameValidator(String firstName)
+    public boolean firstNameValidator(String firstName)
     {
         Pattern pattern=Pattern.compile(FIRST_NAME_PATTERN);
         return pattern.matcher(firstName).matches();
@@ -26,7 +25,7 @@ public class UserRegistration {
         Scanner scanner=new Scanner(System.in);
         System.out.print("\n\t\t***WELCOME TO USER REGISTRATION VALIDATOR***\n\n");
         System.out.print("\n\t\tEnter First Name :");
-        if(userRegistration.firstnameValidator(scanner.nextLine()))
+        if(userRegistration.firstNameValidator(scanner.nextLine()))
             System.out.print("\n\t\tVALID FIRST NAME\n");
         else
             System.out.print("\n\t\tINVALID FIRST NAME\n");
